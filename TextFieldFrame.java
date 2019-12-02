@@ -7,15 +7,15 @@ import javax.swing.*;
  */
 public class TextFieldFrame extends JFrame
 {
-    public JPanel mp;
+    public MyPanel mp;
     public TextFieldFrame(){
         this.setTitle("실습_4");
         this.setSize(250,350);
-        this.setVisible(true);
         
-        mp = new JPanel();
+        mp = new MyPanel();
         this.add(mp);
         
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);
     }
 }
