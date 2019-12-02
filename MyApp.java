@@ -1,4 +1,4 @@
-
+import javax.swing.*;
 /**
  * MyApp 클래스는 프로그램을 실행을 위한 main메소드가 존재하는 클래스입니다.
  * 
@@ -8,6 +8,6 @@
 public class MyApp
 {
     public static void main(String[] args){
-        new TextFieldFrame();
+        JFrame tff = new TextFieldFrame();
     }
 }
