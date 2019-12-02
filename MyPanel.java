@@ -57,10 +57,16 @@ public class MyPanel extends JPanel implements ActionListener
     public void actionPerformed(ActionEvent e){
         JButton bt = (JButton)e.getSource();
         if(bt.equals(mbAdd)){
-            String text = "" + tfName.getText() + "\n" + "" + tfDept.getText() + 
-            "\n" + "" + cbSchoolYear.getSelectedItem()+ "\n"+ ""+ tfAddress.getText();
+            String text = "이름:" + tfName.getText() + "\n" + "학부:" + tfDept.getText() + 
+            "\n" + "학년:" + cbSchoolYear.getSelectedItem()+ "\n"+ "주소:"
+            + tfAddress.getText()+"\n"+"--------------------"+"\n";
             
             ta.append(text);
+        }else if(bt.equals(mbClear)){
+            ta.setText("");
+            tfName.setText("");
+            tfDept.setText("");
+            tfAddress.setText("");
         }
     }
 }
