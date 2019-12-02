@@ -1,0 +1,30 @@
+BlueJ run started: Mon Dec 02 13:20:27 JST 2019
+BlueJ version 4.2.1
+Java version 11.0.2
+JavaFX version 11.0.2+1
+Virtual machine: OpenJDK 64-Bit Server VM 11.0.2+9 (Oracle Corporation)
+Running on: Windows 10 10.0 (amd64)
+Java Home: C:\Users\ayaka\Downloads\BlueJ-windows-421\bluej\jdk
+----
+Detected language "japanese" based on iso639-2 code "jpn"
+Internal error: Unable to load frame labels file: C:\Users\ayaka\Downloads\BlueJ-windows-421\bluej\lib\japanese\frame-labels
+Opening project: C:\Users\ayaka\Downloads\??\??_4-copy
+1575260458051: Listening for JDWP connection on address: javadebug
+javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
+	at java.base/sun.security.ssl.SSLSessionImpl.getPeerCertificates(SSLSessionImpl.java:526)
+	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:128)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:390)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:732)
+	at bluej.collect.DataSubmitter.postData(DataSubmitter.java:183)
+	at bluej.collect.DataSubmitter.processQueue(DataSubmitter.java:135)
+	at bluej.collect.DataSubmitter$1.run(DataSubmitter.java:107)
+Connected to debug VM via dt_shmem transport...
+java.io.FileNotFoundException while reading import cache: userhome\bluej\import-cache.xml (指定されたファイルが見つかりません。)
+Communication with debug VM fully established.

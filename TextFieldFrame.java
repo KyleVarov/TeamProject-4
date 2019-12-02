@@ -1,33 +1,21 @@
-
+import javax.swing.*;
 /**
- * 여기에 TextFieldFrame 클래스 설명을 작성하십시오.
+ * TextFieldFrame에 대한 클래스
  * 
- * @author (작성자 이름) 
- * @version (버전번호나 날짜)
+ * @author (2017315056 이토아야카) 
+ * @version (2019.12.02)
  */
-public class TextFieldFrame
+public class TextFieldFrame extends JFrame
 {
-    // 인스턴스 변수 - 다음의 예제를 사용자에 맞게 바꾸십시오
-    private int x;
-
-    /**
-     * TextFieldFrame 클래스의 객체 생성자
-     */
-    public TextFieldFrame()
-    {
-        // 인스턴스 변수의 초기화
-        x = 0;
-    }
-
-    /**
-     * 예제 메소드 - 이 주석을 사용자에 맞게 바꾸십시오
-     * 
-     * @param  y   메소드의 예제 매개변수
-     * @return     x 더하기 y 
-     */
-    public int sampleMethod(int y)
-    {
-        // 여기에 코드를 작성하십시오.
-        return x + y;
+    public JPanel mp;
+    public TextFieldFrame(){
+        this.setTitle("실습_4");
+        this.setSize(250,350);
+        this.setVisible(true);
+        
+        mp = new JPanel();
+        this.add(mp);
+        
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
