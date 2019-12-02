@@ -9,15 +9,22 @@ import java.awt.*;
 public class MyPanel extends JPanel
 {
     public MyPanel(){
-        
+        String[] schoolYear=new String[]{"1학년","2학년","3학년","4학년"};
         JLabel mlName = new JLabel("이름");
         JLabel mlDept = new JLabel("학과");
         JLabel mlAddress = new JLabel("주소");
+        JLabel mlSchoolYear=new JLabel("학년");
         
-        JTextField tfName = new JTextField(20);
-        JTextField tfDept = new JTextField(20);
-        JTextField tfAddress = new JTextField(20);
+        JTextField tfName = new JTextField(18);
+        JTextField tfDept = new JTextField(18);
+        JTextField tfAddress = new JTextField(18);
         
+        JComboBox cbSchoolYear=new JComboBox(schoolYear);
+        
+        JButton mbAdd=new JButton("추가");
+        JButton mbClear=new JButton("Clear");
+        
+        JTextArea ta=new JTextArea(20,20);
         this.add(mlName);
         this.add(tfName);
         
@@ -26,5 +33,12 @@ public class MyPanel extends JPanel
         
         this.add(mlAddress);
         this.add(tfAddress);
+        
+        this.add(mlSchoolYear);
+        this.add(cbSchoolYear);
+        this.add(mbAdd);
+        this.add(mbClear);
+        
+        this.add(ta);
     }
 }
