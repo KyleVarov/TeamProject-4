@@ -19,6 +19,8 @@ public class MyPanel extends JPanel implements ActionListener
     JComboBox cbSchoolYear;
     
     JTextArea ta;
+    
+    JScrollBar js;
     public MyPanel(){
         String[] schoolYear=new String[]{"1학년","2학년","3학년","4학년"};
         JLabel mlName = new JLabel("이름");
@@ -37,6 +39,12 @@ public class MyPanel extends JPanel implements ActionListener
         
         mbAdd.addActionListener(this);
         ta=new JTextArea(20,20);
+        
+        JScrollBar sb = new JScrollBar();
+        sb.setBounds(100,100, 50,100); 
+        
+        js = new JScrollBar(10);
+        this.add(js);
         this.add(mlName);
         this.add(tfName);
         
