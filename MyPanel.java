@@ -6,7 +6,7 @@ import java.awt.*;
  * @author (작성자 이름) 
  * @version (버전번호나 날짜)
  */
-public class MyPanel extends JPanel
+public class MyPanel extends JPanel implements ActionListener
 {
     public MyPanel(){
         String[] schoolYear=new String[]{"1학년","2학년","3학년","4학년"};
@@ -40,5 +40,10 @@ public class MyPanel extends JPanel
         this.add(mbClear);
         
         this.add(ta);
+    }
+    
+    public void actionPerfomed(ActionEvent e){
+        JButton bt = (JButton)e.getSource();
+        if(bt.equralse)
     }
 }
