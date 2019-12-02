@@ -14,9 +14,9 @@ public class MyPanel extends JPanel
         JLabel mlDept = new JLabel("학과");
         JLabel mlAddress = new JLabel("주소");
         
-        JTextField tfName = new JTextField();
-        JTextField tfDept = new JTextField();
-        JTextField tfAddress = new JTextField();
+        JTextField tfName = new JTextField(20);
+        JTextField tfDept = new JTextField(20);
+        JTextField tfAddress = new JTextField(20);
         
         this.add(mlName);
         this.add(tfName);
